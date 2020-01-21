@@ -25,4 +25,8 @@ export class LazyComponent implements OnInit {
   ngOnInit() {
   }
 
+  unusedFunc() {
+    console.log('This is not called by anyone');
+  }
+
 }

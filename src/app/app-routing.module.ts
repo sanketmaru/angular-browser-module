@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LazyModule } from './lazy-module/lazy-module.module';
 const routes: Routes = [
     {
         path: 'lazy',
-        loadChildren: () => import('./lazy-module/lazy-module.module').then(m => m.LazyModule),
+        loadChildren: ('./lazy-module/lazy-module.module#LazyModule'),
+        // loadChildren: () => import('./lazy-module/lazy-module.module').then(m => m.LazyModule),
         data: {}
     }
 ];
